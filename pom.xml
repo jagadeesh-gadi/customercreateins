@@ -80,7 +80,7 @@
 			<scope>test</scope>
 		</dependency>
 		
-		<dependency>
+		<!-- <dependency>
 			<groupId>com.hospital</groupId>
 			<artifactId>hospital-management</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
@@ -89,7 +89,7 @@
 			<groupId>com.jagadeesh.demoporoject</groupId>
 			<artifactId>demoporoject</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+		</dependency> -->
 		
 	</dependencies>
 
