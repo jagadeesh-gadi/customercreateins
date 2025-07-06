@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Health Template - News Page</title>
+<!--
+
+Template 2098 Health
+
+http://www.tooplate.com/view/2098-health
+
+-->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Tooplate">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
+
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/animate.css">
+
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+<!-- MAIN CSS -->
+<link rel="stylesheet" href="css/tooplate-style.css">
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse"
+	data-offset="50">
+
+	<!-- PRE LOADER -->
+	<section class="preloader">
+		<div class="spinner">
+
+			<span class="spinner-rotate"></span>
+
+		</div>
+	</section>
+
+
+	<!-- HEADER -->
+	<header>
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-4 col-sm-3"></div>
+
+				<div class="col-md-8 col-sm-9 text-align-right"></div>
+
+			</div>
+		</div>
+	</header>
+
+
+	<!-- MENU -->
+	<section class="navbar navbar-default navbar-static-top"
+		role="navigation">
+		<div class="container">
+
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<span class="icon icon-bar"></span> <span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+				</button>
+
+				<!-- lOGO TEXT HERE -->
+				<a href="index.html" class="navbar-brand"><i
+					class="fa fa-h-square"></i>ealth Center</a>
+			</div>
+
+			<!-- MENU LINKS -->
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<!-- Home -->
+					<li><a href="/home" class="smoothScroll">Home</a></li>
+
+					<li class="dropdown"><a href="#"
+						class="dropdown-toggle smoothScroll" data-toggle="dropdown"
+						role="button" aria-expanded="false"> Admin <span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu" role="menu">
+							<!-- Doctors Management Submenu -->
+							<li class="dropdown-submenu"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown">Doctors
+									Management</a>
+								<ul class="dropdown-menu">
+									<li><a href="/admin/add-doctor">Add Doctor</a></li>
+									<li><a href="/admin/doctors/view">View Doctors</a></li>
+								</ul></li>
+
+							<!-- Receptionists Management Submenu -->
+							<li class="dropdown-submenu"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown">Receptionists
+									Management</a>
+								<ul class="dropdown-menu">
+									<li><a href="/admin/receptionists/add">Add
+											Receptionist</a></li>
+									<li><a href="/admin/receptionists/view">View
+											Receptionists</a></li>
+								</ul></li>
+
+							<!-- Patients Management Submenu -->
+							<li class="dropdown-submenu"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown">Patients
+									Management</a>
+								<ul class="dropdown-menu">
+									<li><a href="/admin/patients/add">Add Patient</a></li>
+									<li><a href="/admin/patients/view">View Patients</a></li>
+								</ul></li>
+
+							<!-- Appointments Management Submenu -->
+							<li class="dropdown-submenu"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown">Appointments
+									Management</a>
+								<ul class="dropdown-menu">
+									<li><a href="/admin/add-appointment">Add Appointment</a></li>
+									<li><a href="/admin/appointment/view">View
+											Appointments</a></li>
+								</ul></li>
+						</ul></li>
+
+					<!-- Receptionist Dropdown -->
+					<li class="dropdown"><a href="#"
+						class="dropdown-toggle smoothScroll" data-toggle="dropdown"
+						role="button" aria-expanded="false"> Receptionist <span
+							class="caret"></span>
+					</a>
+						<ul class="dropdown-menu" role="menu">
+							<!-- Patient Submenu -->
+							<li class="dropdown-submenu"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown">Patient</a>
+								<ul class="dropdown-menu">
+									<li><a href="/admin/patients/add">Add Patient</a></li>
+									<li><a href="/admin/patients/view">View Patients</a></li>
+								</ul></li>
+
+							<!-- Appointment Submenu -->
+							<li class="dropdown-submenu"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown">Appointment</a>
+								<ul class="dropdown-menu">
+									<li><a href="/admin/add-appointment">Add Appointment</a></li>
+									<li><a href="/admin/appointment/view">View
+											Appointments</a></li>
+								</ul></li>
+
+							<!-- Doctor View -->
+							<li><a href="/admin/doctors/view">Doctor View</a></li>
+						</ul></li>
+
+					<!-- Doctor Dropdown -->
+					<li class="dropdown"><a href="#"
+						class="dropdown-toggle smoothScroll" data-toggle="dropdown"
+						role="button" aria-expanded="false"> Doctor <span
+							class="caret"></span>
+					</a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="/admin/appointment/view">View Appointment</a></li>
+							<li><a href="/admin/patients/view">View Patient</a></li>
+						</ul></li>
+					<li><a href="/api/auth/login">Logout</a></li>
+					<!-- Contact -->
+					<li><a href="#google-map" class="smoothScroll">Contact</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- NEWS DETAIL -->
+	<section id="news-detail" data-stellar-background-ratio="0.5">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-8 col-sm-7">
+					<!-- NEWS THUMB -->
+					<div class="news-detail-thumb">
+						<div class="news-image">
+							<img src="images/news-image3.jpg" class="img-responsive" alt="">
+						</div>
+						<h3>Review Annual Medical Research</h3>
+						<p>
+						<h5>Advancements in Medical Treatments:</h5>
+						This year has seen significant progress in therapies targeting
+						complex diseases like cancer, diabetes, and cardiovascular
+						conditions. Discover how new treatment options are improving
+						patient outcomes and changing the landscape of healthcare.<br>
+						<h5>Clinical Trials:</h5>
+						A closer look at ongoing clinical trials across various medical
+						specialties, including oncology, neurology, and immunology. These
+						trials are paving the way for new drugs and therapies that offer
+						hope to patients worldwide.<br>
+						<h5>Public Health and Epidemiology:</h5>
+						Learn about the latest research in public health initiatives,
+						focusing on disease prevention, vaccine development, and health
+						policy impacts. Key findings from global health studies highlight
+						the progress in managing and preventing infectious diseases.
+						</p>
+						<blockquote>Innovative Technologies in Medicine:<br>
+							Explore how advancements in medical technology, from AI-driven
+							diagnostic tools to robotic-assisted surgeries, are
+							revolutionizing patient care and clinical practices.</blockquote>
+						<p><h5>Research Impact:</h5>The research showcased in this annual
+							review demonstrates the power of scientific collaboration and the
+							ongoing pursuit of knowledge. This work has led to:</p>
+
+						<ul>
+							<li>Improved diagnostic accuracy and early disease detection</li>
+							<li>More effective and targeted therapies, reducing side
+								effects and improving quality of life</li>
+							<li>New public health strategies to address emerging global
+								health challenges</li>
+						</ul>
+
+						<p><h5>Future Directions:
+						</h5>
+						Looking forward, the medical research community is focused on
+						exploring new frontiers in gene therapy, personalized medicine,
+						and artificial intelligence in healthcare. With these
+						advancements, we aim to continue pushing the boundaries of medical
+						science to offer better solutions for global health issues.
+						</p>
+						<div class="news-social-share">
+							<h4>Share this article</h4>
+							<a href="#" class="btn btn-primary"><i class="fa fa-facebook"></i>Facebook</a>
+							<a href="#" class="btn btn-success"><i class="fa fa-twitter"></i>Twitter</a>
+							<a href="#" class="btn btn-danger"><i
+								class="fa fa-google-plus"></i>Google+</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-5">
+					<div class="news-sidebar">
+						<div class="news-author">
+							<h4>About Annual Medical Research</h4>
+							<p>Welcome to our Annual Medical Research Review, where we
+								present a comprehensive overview of the most impactful and
+								groundbreaking medical research conducted over the past year.
+								This review highlights advances in healthcare, innovative
+								treatments, and clinical trials that are shaping the future of
+								medical science.</p>
+						</div>
+
+						<div class="recent-post">
+							<h4>Recent Posts</h4>
+
+							<div class="media">
+								<div class="media-object pull-left">
+									<a href="#"><img src="images/news-image.jpg"
+										class="img-responsive" alt=""></a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">
+										<a href="#">Introducing a new healing process</a>
+									</h4>
+								</div>
+							</div>
+
+							<div class="media">
+								<div class="media-object pull-left">
+									<a href="#"><img src="images/news-image.jpg"
+										class="img-responsive" alt=""></a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">
+										<a href="#">About Amazing Technology</a>
+									</h4>
+								</div>
+							</div>
+						</div>
+
+						<div class="news-categories">
+							<h4>Categories</h4>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Dental</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i>
+									Cardiology</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Health</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i>
+									Consultant</a></li>
+						</div>
+
+						<div class="news-ads sidebar-ads">
+							<h4>Sidebar Banner Ad</h4>
+						</div>
+
+						<div class="news-tags">
+							<h4>Tags</h4>
+							<li><a href="#">Pregnancy</a></li>
+							<li><a href="#">Health</a></li>
+							<li><a href="#">Consultant</a></li>
+							<li><a href="#">Medical</a></li>
+							<li><a href="#">Doctors</a></li>
+							<li><a href="#">Social</a></li>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- FOOTER -->
+	<footer data-stellar-background-ratio="5">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-4 col-sm-4">
+					<div class="footer-thumb">
+						<h4 class="wow fadeInUp" data-wow-delay="0.4s">Get in Touch</h4>
+						<p>Feel free to reach out to us with any questions or
+							inquiries. Our team is here to assist you Let's connect and make
+							things easier for you!</p>
+
+
+						<div class="contact-info">
+							<p>
+								<i class="fa fa-phone"></i> 9390188434
+							</p>
+							<p>
+								<i class="fa fa-envelope-o"></i> <a
+									href="https://www.linkedin.com/in/jagadeesh-gadi-653b9b227/">info@LinkedIn</a>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-4">
+					<div class="footer-thumb">
+						<h4 class="wow fadeInUp" data-wow-delay="0.4s">Latest News</h4>
+						<div class="latest-stories">
+							<div class="stories-image">
+								<a href="#"><img src="/images/news-image.jpg"
+									class="img-responsive" alt=""></a>
+							</div>
+							<div class="stories-info">
+								<a href="#"><h5>Amazing Technology</h5></a> <span>August
+									05, 2024</span>
+							</div>
+						</div>
+
+						<div class="latest-stories">
+							<div class="stories-image">
+								<a href="#"><img src="/images/news-image.jpg"
+									class="img-responsive" alt=""></a>
+							</div>
+							<div class="stories-info">
+								<a href="#"><h5>New Healing Process</h5></a> <span>October
+									23, 2024</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-4">
+					<div class="footer-thumb">
+						<div class="opening-hours">
+							<h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
+							<p>
+								Monday - Friday <span>06:00 AM - 10:00 PM</span>
+							</p>
+							<p>
+								Saturday <span>09:00 AM - 08:00 PM</span>
+							</p>
+							<p>
+								Sunday <span>Closed</span>
+							</p>
+						</div>
+
+						<ul class="social-icon">
+							<li><a href="https://www.facebook.com/jagadeesh.gadi.5/"
+								class="fa fa-facebook-square" attr="facebook icon"></a></li>
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="https://www.instagram.com/peace_dudeo/"
+								class="fa fa-instagram"></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-12 col-sm-12 border-top">
+					<div class="col-md-4 col-sm-6">
+						<div class="copyright-text">
+							<p>
+								Copyright &copy; 2024 Project | Design By: <a
+									href="https://www.linkedin.com/in/jagadeesh-gadi-653b9b227/"
+									target="_parent">Jagadeesh</a>
+							</p>
+						</div>
+					</div>
+
+
+					<div class="col-md-2 col-sm-2 text-align-center">
+						<div class="angle-up-btn">
+							<a href="#top" class="smoothScroll wow fadeInUp"
+								data-wow-delay="1.2s"><i class="fa fa-angle-up"></i></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+
+	<!-- SCRIPTS -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/custom.js"></script>
+
+</body>
+</html>

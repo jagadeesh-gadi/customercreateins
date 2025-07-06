@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Health Center</title>
+<!--
+
+Template 2098 Health
+
+http://www.tooplate.com/view/2098-health
+
+-->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Tooplate">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/owl.carousel.css">
+<link rel="stylesheet" href="/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="/css/admin.css">
+<link rel="stylesheet" href="/css/tooplate-style.css">
+
+<style>
+</style>
+
+
+<!-- MAIN CSS -->
+<link rel="stylesheet" href="css/tooplate-style.css">
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse"
+	data-offset="50">
+
+	<!-- PRE LOADER -->
+	<section class="preloader">
+		<div class="spinner">
+
+			<span class="spinner-rotate"></span>
+
+		</div>
+	</section>
+
+
+	<!-- HEADER -->
+	<header>
+		<div class="container">
+			<div class="row">
+			</div>
+		</div>
+	</header>
+
+
+	<!-- MENU -->
+	<section class="navbar navbar-default navbar-static-top"
+		role="navigation">
+		<div class="container">
+
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<span class="icon icon-bar"></span> <span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+				</button>
+
+				<!-- lOGO TEXT HERE -->
+				<a href="index.html" class="navbar-brand"><i
+					class="fa fa-h-square"></i>ealth Center</a>
+			</div>
+
+			<!-- MENU LINKS -->
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<!-- Home -->
+					<li><a href="/home" class="smoothScroll">Home</a></li>
+
+					<li class="dropdown"><a href="#"
+						class="dropdown-toggle smoothScroll" data-toggle="dropdown"
+						role="button" aria-expanded="false"> Admin <span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu" role="menu">
+							<!-- Doctors Management Submenu -->
+							<li class="dropdown-submenu"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown">Doctors
+									Management</a>
+								<ul class="dropdown-menu">
+									<li><a href="/admin/add-doctor">Add Doctor</a></li>
+									<li><a href="/admin/doctors/view">View Doctors</a></li>
+								</ul></li>
+
+							<!-- Receptionists Management Submenu -->
+							<li class="dropdown-submenu"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown">Receptionists
+									Management</a>
+								<ul class="dropdown-menu">
+									<li><a href="/admin/receptionists/add">Add
+											Receptionist</a></li>
+									<li><a href="/admin/receptionists/view">View
+											Receptionists</a></li>
+								</ul></li>
+
+							<!-- Patients Management Submenu -->
+							<li class="dropdown-submenu"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown">Patients
+									Management</a>
+								<ul class="dropdown-menu">
+									 <li><a href="/admin/patients/add">Add Patient</a></li>
+									<li><a href="/admin/patients/view">View Patients</a></li>
+								</ul></li>
+
+							<!-- Appointments Management Submenu -->
+							<li class="dropdown-submenu"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown">Appointments
+									Management</a>
+								<ul class="dropdown-menu">
+									<li><a href="/admin/add-appointment">Add Appointment</a></li>
+									<li><a href="/admin/appointment/view">View
+											Appointments</a></li>
+								</ul></li>
+						</ul></li>
+
+					<!-- Receptionist Dropdown -->
+					<li class="dropdown"><a href="#"
+						class="dropdown-toggle smoothScroll" data-toggle="dropdown"
+						role="button" aria-expanded="false"> Receptionist <span
+							class="caret"></span>
+					</a>
+						<ul class="dropdown-menu" role="menu">
+							<!-- Patient Submenu -->
+							<li class="dropdown-submenu"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown">Patient</a>
+								<ul class="dropdown-menu">
+									 <li><a href="/admin/patients/add">Add Patient</a></li>
+									<li><a href="/admin/patients/view">View Patients</a></li>
+								</ul></li>
+
+							<!-- Appointment Submenu -->
+							<li class="dropdown-submenu"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown">Appointment</a>
+								<ul class="dropdown-menu">
+									<li><a href="/admin/add-appointment">Add
+											Appointment</a></li>
+									<li><a href="/admin/appointment/view">View
+											Appointments</a></li>
+								</ul></li>
+
+							<!-- Doctor View -->
+							<li><a href="/admin/doctors/view">Doctor View</a></li>
+						</ul></li>
+
+					<!-- Doctor Dropdown -->
+					<li class="dropdown"><a href="#"
+						class="dropdown-toggle smoothScroll" data-toggle="dropdown"
+						role="button" aria-expanded="false"> Doctor <span
+							class="caret"></span>
+					</a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="/admin/appointment/view">View Appointment</a></li>
+									<li><a href="/admin/patients/view">View Patients</a></li>
+						</ul></li>
+
+					<!-- Contact -->
+					<li><a href="#google-map" class="smoothScroll">Contact</a></li>
+					
+
+
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	
+	
+	<section id="edit-appointment" data-stellar-background-ratio="3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
+                    <br><br>
+                    <h2>Edit Appointment Details</h2>
+                </div>
+                <form action="/admin/appointments/edit" method="post">
+                    <input type="hidden" name="id" th:value="${appointment.id}">
+                    <div class="wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="col-md-12 col-sm-12">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" th:value="${appointment.name}" class="form-control" required><br>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" th:value="${appointment.email}" class="form-control" required><br>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <label for="date">Date:</label>
+                            <input type="date" id="date" name="date" th:value="${appointment.date}" class="form-control" required><br>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <label for="department">Department:</label>
+                            <select id="department" name="department" class="form-control" required>
+                                <option th:selected="${appointment.department == 'General Health'}">General Health</option>
+                                <option th:selected="${appointment.department == 'Cardiology'}">Cardiology</option>
+                                <option th:selected="${appointment.department == 'Dental'}">Dental</option>
+                                <option th:selected="${appointment.department == 'Medical Research'}">Medical Research</option>
+                            </select><br>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" th:value="${appointment.phone}" class="form-control" required><br>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" th:text="${appointment.message}" placeholder="Additional message"></textarea><br>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <button type="submit" class="appointment-btn" onclick="return confirm('Are you sure you want to update this appointment?');">Update Appointment</button>
+                        </div>
+                    </div>
+                </form>
+                <div th:if="${successMessage}" class="alert alert-success" th:text="${successMessage}"></div>
+                <div th:if="${errorMessage}" class="alert alert-danger" th:text="${errorMessage}"></div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <br><br><br>
+                <img src="/images/edit-appointment.jpg" class="img-responsive" alt="Edit Appointment">
+            </div>
+        </div>
+    </div>
+</section>
+	
+	
+	<!-- FOOTER -->
+	<footer data-stellar-background-ratio="5">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-4 col-sm-4">
+					<div class="footer-thumb">
+						<h4 class="wow fadeInUp" data-wow-delay="0.4s">Get in Touch</h4>
+						<p>Feel free to reach out to us with any questions or
+							inquiries. Our team is here to assist you Let's connect and make
+							things easier for you!</p>
+
+
+						<div class="contact-info">
+							<p>
+								<i class="fa fa-phone"></i> 9390188434
+							</p>
+							<p>
+								<i class="fa fa-envelope-o"></i> <a
+									href="https://www.linkedin.com/in/jagadeesh-gadi-653b9b227/">info@LinkedIn</a>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-4">
+					<div class="footer-thumb">
+						<h4 class="wow fadeInUp" data-wow-delay="0.4s">Latest News</h4>
+						<div class="latest-stories">
+							<div class="stories-image">
+								<a href="#"><img src="/images/news-image.jpg"
+									class="img-responsive" alt=""></a>
+							</div>
+							<div class="stories-info">
+								<a href="#"><h5>Amazing Technology</h5></a> <span>August
+									05, 2024</span>
+							</div>
+						</div>
+
+						<div class="latest-stories">
+							<div class="stories-image">
+								<a href="#"><img src="/images/news-image.jpg"
+									class="img-responsive" alt=""></a>
+							</div>
+							<div class="stories-info">
+								<a href="#"><h5>New Healing Process</h5></a> <span>October
+									23, 2024</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-4">
+					<div class="footer-thumb">
+						<div class="opening-hours">
+							<h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
+							<p>
+								Monday - Friday <span>06:00 AM - 10:00 PM</span>
+							</p>
+							<p>
+								Saturday <span>09:00 AM - 08:00 PM</span>
+							</p>
+							<p>
+								Sunday <span>Closed</span>
+							</p>
+						</div>
+
+						<ul class="social-icon">
+							<li><a href="https://www.facebook.com/jagadeesh.gadi.5/"
+								class="fa fa-facebook-square" attr="facebook icon"></a></li>
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="https://www.instagram.com/peace_dudeo/" class="fa fa-instagram"></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-12 col-sm-12 border-top">
+					<div class="col-md-4 col-sm-6">
+						<div class="copyright-text">
+							<p>
+								Copyright &copy; 2024 Project | Design By: <a
+									href="https://www.linkedin.com/in/jagadeesh-gadi-653b9b227/"
+									target="_parent">Jagadeesh</a>
+							</p>
+						</div>
+					</div>
+
+
+					<div class="col-md-2 col-sm-2 text-align-center">
+						<div class="angle-up-btn">
+							<a href="#top" class="smoothScroll wow fadeInUp"
+								data-wow-delay="1.2s"><i class="fa fa-angle-up"></i></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+
+    <!-- Scripts -->
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.sticky.js"></script>
+    <script src="/js/jquery.stellar.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/smoothscroll.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/custom.js"></script>
+    <script src="/js/admin.js"></script>
+</body>
+</html>
+	

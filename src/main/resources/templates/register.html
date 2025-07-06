@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Tooplate">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/owl.carousel.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href="/css/tooplate-style.css">
+
+    <title>Health Center - Register</title>
+
+    <style>
+        /* Add any custom styles here */
+    </style>
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+    <!-- PRE LOADER -->
+    <section class="preloader">
+        <div class="spinner">
+            <span class="spinner-rotate"></span>
+        </div>
+    </section>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <!-- Header content here (if needed) -->
+            </div>
+        </div>
+    </header>
+
+    <!-- MENU -->
+    <section class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand"><i class="fa fa-h-square"></i> Health Center</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/" class="smoothScroll">Home</a></li>
+                    <li><a href="/api/auth/login" class="smoothScroll">Login</a></li>
+                    <li><a href="/api/auth/register" class="smoothScroll">Register</a></li>
+                    <li><a href="#google-map" class="smoothScroll">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- REGISTER FORM -->
+    <section id="register" class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h1>Register</h1>
+                <form action="/api/auth/register" method="post">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Role:</label>
+                        <input type="text" id="role" name="role" class="form-control">
+                    </div>
+                    <div class="form-group d-flex justify-content-between">
+                        <button type="submit" class="btn btn-primary">Register</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="/api/auth/login" class="btn btn-primary">Login</a>
+                    </div>
+                    <p class="text-danger" th:if="${error}">Error: <span th:text="${error}"></span></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer data-stellar-background-ratio="5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="footer-thumb">
+                        <h4 class="wow fadeInUp" data-wow-delay="0.4s">Get in Touch</h4>
+                        <p>Feel free to reach out to us with any questions or inquiries. Our team is here to assist you!</p>
+                        <div class="contact-info">
+                            <p><i class="fa fa-phone"></i> 9390188434</p>
+                            <p><i class="fa fa-envelope-o"></i> <a href="mailto:info@LinkedIn">info@LinkedIn</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="footer-thumb">
+                        <h4 class="wow fadeInUp" data-wow-delay="0.4s">Latest News</h4>
+                        <div class="latest-stories">
+                            <div class="stories-image">
+                                <a href="#"><img src="/images/news-image.jpg" class="img-responsive" alt=""></a>
+                            </div>
+                            <div class="stories-info">
+                                <a href="#"><h5>Amazing Technology</h5></a> <span>August 05, 2024</span>
+                            </div>
+                        </div>
+                        <div class="latest-stories">
+                            <div class="stories-image">
+                                <a href="#"><img src="/images/news-image.jpg" class="img-responsive" alt=""></a>
+                            </div>
+                            <div class="stories-info">
+                                <a href="#"><h5>New Healing Process</h5></a> <span>October 23, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="footer-thumb">
+                        <div class="opening-hours">
+                            <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
+                            <p>Monday - Friday <span>06:00 AM - 10:00 PM</span></p>
+                            <p>Saturday <span>09:00 AM - 08:00 PM</span></p>
+                            <p>Sunday <span>Closed</span></p>
+                        </div>
+                        <ul class="social-icon">
+                            <li><a href="https://www.facebook.com/jagadeesh.gadi.5/" class="fa fa-facebook-square"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="https://www.instagram.com/peace_dudeo/" class="fa fa-instagram"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 border-top">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2024 Project | Design By: <a href="https://www.linkedin.com/in/jagadeesh-gadi-653b9b227/" target="_parent">Jagadeesh</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 text-align-center">
+                        <div class="angle-up-btn">
+                            <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i class="fa fa-angle-up"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.sticky.js"></script>
+    <script src="/js/jquery.stellar.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/smoothscroll.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/custom.js"></script>
+    <script src="/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Management</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        h1 {
+            color: #343a40;
+            margin-bottom: 30px;
+        }
+        h2 {
+            margin-top: 30px;
+            color: #495057;
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+        .table th {
+            background-color: #007bff;
+            color: white;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Appointments</h1>
+
+        <h2>Book Appointment</h2>
+        <form action="/appointments/add" method="POST" class="mb-4">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="department">Select Department:</label>
+                <select id="department" name="department" class="form-control" required>
+                    <option>General Health</option>
+                    <option>Cardiology</option>
+                    <option>Dental</option>
+                    <option>Medical Research</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" class="form-control" rows="5"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-custom">Book Appointment</button>
+        </form>
+
+        <h2>List of Appointments</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Date</th>
+                    <th>Department</th>
+                    <th>Phone</th>
+                    <th>Message</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="appointment : ${appointments}">
+                    <td th:text="${appointment.id}"></td>
+                    <td th:text="${appointment.name}"></td>
+                    <td th:text="${appointment.email}"></td>
+                    <td th:text="${appointment.date}"></td>
+                    <td th:text="${appointment.department}"></td>
+                    <td th:text="${appointment.phone}"></td>
+                    <td th:text="${appointment.message}"></td>
+                    <td>
+                        <form action="/appointments/edit" method="POST" style="display:inline;">
+                            <input type="hidden" name="id" th:value="${appointment.id}" />
+                            <input type="text" name="name" th:value="${appointment.name}" required class="form-control d-inline-block" style="width: 150px;" />
+                            <input type="text" name="department" th:value="${appointment.department}" required class="form-control d-inline-block" style="width: 150px;" />
+                            <button type="submit" class="btn btn-custom">Edit</button>
+                        </form>
+                        <form action="/appointments/delete" method="POST" style="display:inline;">
+                            <input type="hidden" name="id" th:value="${appointment.id}" />
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
