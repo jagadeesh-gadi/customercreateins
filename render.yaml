@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: customercreateins
+    env: java
+    buildCommand: chmod +x mvnw && ./mvnw clean package -DskipTests
+    startCommand: java -jar target/CustomerCreateins-0.0.1-SNAPSHOT.jar
+    plan: free
+    branch: main
+    autoDeploy: true
